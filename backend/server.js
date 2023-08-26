@@ -10,7 +10,7 @@ app.use(express.json()); //parse all the requests that are in json format to jav
 
 //connect to the mongodb database server
 mongoose
-  .connect("mongodb://127.0.0.1:27017/testDB")
+  .connect("mongodb://192.168.43.110/testDB")
   .then(() => console.log("connected to mongodb"))
   .catch((error) => console.log(error));
 

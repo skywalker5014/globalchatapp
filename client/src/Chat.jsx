@@ -24,7 +24,7 @@ function Chat() {
 
   function send() {
     websocket.send(datatosend); //send data to the server
-    document.getElementById('messagebox').value = '' //reset the input field after sending the data
+    setdatatosend("")//reset the input field after sending the data
   }
 
   return (
@@ -35,7 +35,9 @@ function Chat() {
         ))}
       </div>
       <input
-        type="text" id="messagefield"
+        type="text" 
+        id="messagefield"
+        value={datatosend}
         onChange={(event) => setdatatosend(`${usrname}: ${event.target.value}`)}
       />
       <button className="btn" id="msgsend" onClick={() => send()}>send</button>
