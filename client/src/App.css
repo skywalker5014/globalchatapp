@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(6, 91, 194);
+}
+
+#authbackground {
+  width: 100%;
+  height: 100vh;
+  border-radius: 3px;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(0, 255, 195) 0%,
+    rgb(0, 157, 255) 25%,
+    rgb(0, 255, 183) 51%,
+    #f5337a 100%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.authcontainer {
+  display: grid;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  width: 20%;
+  height: 150px;
+  gap: 10px;
+  padding: 55px;
+  justify-items: center;
+  background-color: rgba(245, 245, 220, 0.6);
+  border-radius: 10px;
+}
+
+.btn {
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(6, 112, 151);
+  background-color: rgb(9, 180, 243);
+  transition: transform ease 1s;
+  transition: box-shadow ease 50ms;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 1px 1px red;
+}
+
+.inputbox {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid rgb(21, 107, 6);
+}
+
+.chatcontainer {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  height: 600px;
+  background-color: rgb(4, 23, 47);
+  border-radius: 10px;
+}
+
+#messagefield {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+.useraccess {
+  display: flex;
+  gap: 5px;
+}
+
+#msgsend {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+#logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 3px;
+  color: white;
+  background-color: rgb(22, 22, 104);
+}
+
+.messagecontainer {
+  border: 1px solid white;
+  overflow-y: scroll;
+  height: 460px;
+  width: 50%;
+  margin-top: 70px;
+  background-color: rgb(6, 91, 194);
+}
+
+.messagebox {
+  border: 1px solid black;
+  border-width: medium;
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+  text-align: start;
+  border-radius: 3px;
+}
